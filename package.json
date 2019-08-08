@@ -1,12 +1,13 @@
 {
   "name": "JSX_DOM",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/bundle.js",
   "repository": "git@github.com:Somo86/JSX_DOM.git",
   "author": "albertsomoza <a.somo86@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "rollup src/index.js --file lib/bundle.js --format umd --name sparkJSX"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
