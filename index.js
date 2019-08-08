@@ -3,10 +3,15 @@ import Header from './components/header';
 
 function App() {
     return (
-        <div>
-            <h1>Hello JSX world</h1>
-            <Header lastItem="Item Prop" />
-        </div>
+        <Spark.Fragment>
+            <div>
+                <h1>Hello JSX world</h1>
+                <Header lastItem="Item Prop" />
+            </div>
+            <div>
+                <p>Bottom line</p>
+            </div>
+        </Spark.Fragment>
     );
 }
 

@@ -1,9 +1,11 @@
 import createElement from './createElement';
 import renderDOM from './renderDOM';
+import Fragment from './fragment';
 
 const Spark = {
     createElement,
-    renderDOM
+    renderDOM,
+    Fragment,
 }
 
 export default Spark;

@@ -1,6 +1,7 @@
 function createElement(tag, attrs, ...children) {
+    
+    if (typeof tag === 'function' && tag.name === 'fragment') { return tag(...children) }
     if (typeof tag === 'function') { return tag(attrs) }
-
     if (typeof tag === 'string') {
     
         // fragments to append multiple children to the initial node
