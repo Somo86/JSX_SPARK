@@ -1,6 +1,6 @@
 # Spark-JSX
 Spark-JSX is a tinny library for using JSX syntax on VanillaJS
-## Dependencies <hr/>
+## Dependencies
 install Babel loaders for JSX:
 ```js
 $ npm install @babel/plugin-syntax-jsx @babel/plugin-transform-react-jsx --save-dev
@@ -20,7 +20,7 @@ Add JSX plugins on your .babelrc and include <strong>Spark.createElement</strong
     ...
 }
 ```
-## Basic usage on client side <hr />
+## Basic usage on client side
 Use <strong>Spark.renderDOM</strong> method for rendering your JSX component into your DOM tree
 ```html
 <div id="app"></div>
@@ -40,10 +40,10 @@ function App() {
 
 Spark.renderDOM(<App />, '#app');
 ```
-### Fragment <hr/>
-Fragment creates an imaginary node with all the properties and methods of the Node object.
+### Fragment
+Fragment creates an imaginary node with all the properties and methods of the Node object. Use <strong>Spark.Fragment</strong> component to wrap any JSX Element adding no DOM element.
 ```js
-function Fragment() {
+function App() {
     return (
         <Spark.Fragment>
             <div>
