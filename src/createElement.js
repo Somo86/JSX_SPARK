@@ -1,5 +1,6 @@
+import Events from './events';
+
 function createElement(tag, attrs, ...children) {
-    
     if (typeof tag === 'function' && tag.name === 'fragment') { return tag(...children) }
     if (typeof tag === 'function') { return tag(attrs) }
     if (typeof tag === 'string') {
@@ -20,11 +21,21 @@ function createElement(tag, attrs, ...children) {
            }
         });
 
-        element.appendChild(fragments)
+        element.appendChild(fragments);
+        attrs && addEvent(element, attrs);
+        
         // Merge element with attributes
         Object.assign(element, attrs)
         return element;
       }
+}
+
+function addEvent(element, attrs) {
+  for (let key in attrs) {
+    const attr = key.toLowerCase();
+    const event = Events.includes(attr);
+    if(event) element[attr] = attrs[key];
+  }
 }
 
 export default createElement;

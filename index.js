@@ -5,7 +5,7 @@ function App() {
     return (
         <Spark.Fragment>
             <div>
-                <h1>Hello JSX world</h1>
+                <h1 onClick={click} className="papa">Hello JSX world</h1>
                 <Header lastItem="Item Prop" />
             </div>
             <div>
@@ -13,6 +13,10 @@ function App() {
             </div>
         </Spark.Fragment>
     );
+}
+
+function click(e) {
+    console.log(e);
 }
 
 Spark.renderDOM(<App />, '#app');
