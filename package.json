@@ -1,5 +1,5 @@
 {
-  "name": "JSX_DOM",
+  "name": "spark-jsx",
   "version": "1.0.0",
   "main": "lib/bundle.js",
   "repository": "git@github.com:Somo86/JSX_DOM.git",
