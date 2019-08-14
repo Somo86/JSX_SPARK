@@ -7,12 +7,20 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html",
-    "build": "rollup src/index.js --file lib/bundle.js --format umd --name sparkJSX"
+    "build": "rollup src/index.js --file lib/bundle.js --format umd --name sparkJSX",
+    "test": "jest --no-cache --config jest.config.json",
+    "test:watch": "jest --watch --no-cache --config jest.config.json"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-syntax-jsx": "^7.2.0",
-    "@babel/plugin-transform-react-jsx": "^7.3.0"
+    "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.5.5",
+    "babel-jest": "^24.8.0",
+    "babel-polyfill": "^6.26.0",
+    "jest": "^24.8.0"
   }
 }

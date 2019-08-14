@@ -5,7 +5,7 @@ function App() {
     return (
         <Spark.Fragment>
             <div>
-                <h1 onClick={click} className="papa">Hello JSX world</h1>
+                <h1 onClick={click}>Hello JSX world</h1>
                 <Header lastItem="Item Prop" />
             </div>
             <div>
