@@ -1,3 +1,5 @@
+import errorHandler from './errorHandler';
+
 function fragment(...children) {
     const fragments = document.createDocumentFragment();
 
@@ -8,8 +10,8 @@ function fragment(...children) {
           const textnode = document.createTextNode(child)
           fragments.appendChild(textnode)
         } else {
-          // later other things could not be HTMLElement not strings
-          console.log('not appendable', child);
+          // not HTMLElement not strings
+          console.error(`Any JSX child must be an HTMLElement or string: ${child}`);
         }
      });
      
