@@ -1,4 +1,4 @@
-import Spark from './src';
+import Spark from '../src/index';
 import Header from './components/header';
 
 function App() {

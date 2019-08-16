@@ -1,0 +1,11 @@
+node_modules
+.cache
+dist
+coverage
+src
+example
+.babelrc
+jest.config.json
+rollup.config.js
+yarn-error.log
+yarn.lock

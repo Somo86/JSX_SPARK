@@ -1,4 +1,4 @@
-import Spark from '../src';
+import Spark from '../../src';
 
 function Header({lastItem}) {
     return (

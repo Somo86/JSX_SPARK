@@ -8,7 +8,7 @@
   "author": "AlbertSomoza <a.somo86@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel example/index.html",
     "build": "rollup --config",
     "test": "jest --no-cache --config jest.config.json --coverage",
     "test:watch": "jest --watch --no-cache --config jest.config.json"
