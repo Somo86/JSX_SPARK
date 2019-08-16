@@ -1,5 +1,9 @@
 # Spark-JSX
 Spark-JSX is a tinny library for using JSX syntax on VanillaJS
+## Install
+```js
+$ npm install spark-jsx --save-dev
+```
 ## Dependencies
 install Babel loaders for JSX:
 ```js
