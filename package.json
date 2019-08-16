@@ -42,7 +42,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm linter && npm test"
+      "pre-push": "npm run linter && npm test"
     }
   }
 }
