@@ -4,12 +4,15 @@
   "main": "lib/bundle.iife.js",
   "module": "lib/bundle.esm.js",
   "browser": "lib/bundle.iife.js",
-  "repository": "git@github.com:Somo86/JSX_DOM.git",
+  "repository": "git@github.com:Somo86/JSX_SPARK.git",
+  "homepage": "git@github.com:Somo86/JSX_SPARK",
+  "bugs": "git@github.com:Somo86/JSX_SPARK/issues",
   "author": "AlbertSomoza <a.somo86@gmail.com>",
   "license": "MIT",
+  "keywords": ["jsx", "vanilla", "react"],
   "scripts": {
     "start": "parcel example/index.html",
-    "build": "rollup --config",
+    "build": "npm run test && rollup --config",
     "test": "jest --no-cache --config jest.config.json --coverage",
     "test:watch": "jest --watch --no-cache --config jest.config.json"
   },
