@@ -1,21 +1,7 @@
-import errorHandler from './errorHandler';
+import {renderChildren} from './utils/render/index';
 
 function fragment(...children) {
-    const fragments = document.createDocumentFragment();
-
-    children.forEach(child => {
-        if (child instanceof HTMLElement) { 
-          fragments.appendChild(child)
-        } else if (typeof child === 'string'){
-          const textnode = document.createTextNode(child)
-          fragments.appendChild(textnode)
-        } else {
-          // not HTMLElement not strings
-          console.error(`Any JSX child must be an HTMLElement or string: ${child}`);
-        }
-     });
-     
-    return fragments;
+    return renderChildren(children);
 }
 
 export default fragment;

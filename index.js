@@ -9,6 +9,9 @@ function App() {
                 <Header lastItem="Item Prop" />
             </div>
             <div>
+                {
+                    ['1', '2'].map(num => (<p>{num}</p>))
+                }
                 <p>Bottom line</p>
             </div>
         </Spark.Fragment>
