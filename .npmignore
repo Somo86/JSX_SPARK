@@ -10,3 +10,4 @@ rollup.config.js
 yarn-error.log
 yarn.lock
 .npmrc
+.eslintrc

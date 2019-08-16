@@ -1,7 +1,7 @@
-import {renderChildren} from './utils/render/index';
+import { renderChildren } from './utils/render/index'
 
-function fragment(...children) {
-    return renderChildren(children);
+function fragment (...children) {
+  return renderChildren(children)
 }
 
-export default fragment;
+export default fragment

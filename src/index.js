@@ -1,11 +1,11 @@
-import createElement from './createElement';
-import renderDOM from './renderDOM';
-import Fragment from './fragment';
+import createElement from './createElement'
+import renderDOM from './renderDOM'
+import Fragment from './fragment'
 
 const Spark = {
-    createElement,
-    renderDOM,
-    Fragment,
+  createElement,
+  renderDOM,
+  Fragment
 }
 
-export default Spark;
+export default Spark

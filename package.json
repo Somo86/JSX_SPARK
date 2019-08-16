@@ -9,12 +9,17 @@
   "bugs": "git@github.com:Somo86/JSX_SPARK/issues",
   "author": "AlbertSomoza <a.somo86@gmail.com>",
   "license": "MIT",
-  "keywords": ["jsx", "vanilla", "react"],
+  "keywords": [
+    "jsx",
+    "vanilla",
+    "react"
+  ],
   "scripts": {
     "start": "parcel example/index.html",
     "build": "npm run test && rollup --config",
     "test": "jest --no-cache --config jest.config.json --coverage",
-    "test:watch": "jest --watch --no-cache --config jest.config.json"
+    "test:watch": "jest --watch --no-cache --config jest.config.json",
+    "linter": "eslint src/*.js --fix"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -26,12 +31,18 @@
     "@babel/preset-env": "^7.5.5",
     "babel-jest": "^24.8.0",
     "babel-polyfill": "^6.26.0",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
     "husky": "^3.0.3",
     "jest": "^24.8.0"
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm test"
+      "pre-push": "npm linter && npm test"
     }
   }
 }
